@@ -1,0 +1,95 @@
+Stock
+-----
+
+1. Stock Excel
+
+- Rename "Pound" to "Pound Cost"
+- I will attach stock.xls and stock(1).xls where both get different outcome
+-- stock.xls - Able to import stocks and entries are created but Pound, Cost (HKD), Selling (HKD) and VIP (HKD) are blank (zero for pound)
+-- For stock(1).xls - Redirect to error exception page
+
+2. Add Stock
+
+- Modify Quantity, Selling and VIP to required fields
+- VIP change so only accept numbers
+- If add existing stock, still able to add which is wrong. The unique identifier for stock is the name, so ABC and ABC will be the same stock. ABC and Abc is also the same stock. ABC and A BC is not the same stock.
+
+
+(Done)
+Invoices
+--------
+
+1. Creating Invoice
+
+- When user click submit, validate first before reloading the page. Currently all input data will clear if there is something wrong with the invoice, example missing customer
+- If using existing invoice number, it will redirect to error exception page. Please modify it so it will show an error message instead
+- If add same item, it will show 2 entries, which is ok. But only 1 radio button can be select out of the 4 radio buttons (Invoice can still be submitted without any issue but when edit, only 1 row of the item will show up)
+
+(Done)
+
+
+2. Printing  (Done)
+
+- Need to work on the layout as it is very distorted
+- If there are many items, it will push down to the 2nd page and become even more distorted
+- Please try to
+-- Decrease font size
+-- Minimize margin
+-- Centralize the whole invoice (Currently it's leaning to the right)
+-- Decrease table size and padding (Especially padding since it took a lot of space)
+
+Settings
+--------
+
+1. Editor
+
+- Cannot enter Chinese characters, it will change to ????
+
+(Done)
+
+
+ 
+
+
+
+1 Add Sample Excel in Stock (Beside Import, label it "Sample Excel")
+2. Customers in "Add Invoice" change to search bar like stock as there may have many customers in the future
+
+3. Add a report section below employee for these reports
+
+Sales
+i. Fields
+- Date
+- Invoice
+- Customer
+- Total
+- Cost
+- Profit
+
+ii. Filter
+- Date (A drop down list to select the date range and two date pickers)
+- Item (A search bar same as the one in "Add Invoice")
+- Customer (A search bar like the one for item above)
+
+*********************************
+Section complete
+
+Customers
+i. Fields
+- Customer Name
+- Total
+
+ii. Filter
+- Date (A drop down list to select the date range and two date pickers)
+
+*****************************
+
+Stocks
+i. Fields
+- Item Name
+- Quantity
+- Total
+
+ii. Filter
+- Date (A drop down list to select the date range and two date pickers)
+- Item (A search bar same as the one in "Add Invoice")

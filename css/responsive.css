@@ -1,0 +1,29 @@
+@media only screen and (max-width: 736px) {
+.search-box{ padding: 0px; }
+.search-box .search-bar{ display: inline-block; width: 73%;}
+.search-box .search-btn{ width: auto; display: inline-block;}
+.add-btn{ margin-top: 5px; float: left !important; }
+.content-body{ padding: 0px !important; }
+section header .title{ padding: 15px; margin: 0px; }
+section header{ min-height: auto; }
+.page-title h1 { font-size: 20px; } 
+.my-table td{ width:100%; float: left; padding: 0 8px !important; border: none !important;}
+.my-table td input{ margin-bottom: 5px; }
+.t-staus .status{width:100px;}
+.form-body{ padding: 15px !important; }
+.date-range-1{ text-align: left !important; }
+.date-range-2 label{ width:100% !important; float: left; }
+.date-range-2 input{ width:100% !important;}
+.or{margin: 10px 0; }
+.btn-td input{ margin-top: 15px; }
+.btn-td button{ margin-top: 10px; }
+}
+@media only screen and (max-width: 375px) {
+.search-box .search-bar{     width: 70%; }
+.btn-info{ margin-top: 5px; }
+}
+@media only screen and (max-width: 320px) {
+.search-box .search-bar{width: 60%; }
+
+}
+
